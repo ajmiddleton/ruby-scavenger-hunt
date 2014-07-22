@@ -18,4 +18,11 @@ class ExampleTest < MiniTest::Unit::TestCase
     distance = VectorDistance.calculate(vector_final, vector_initial)
     assert_equal distance, 3
   end
+
+  def test_vector_distance_2
+    vector_final = Vector[-3,1]
+    vector_initial = Vector[0,1]
+    distance = VectorDistance.calculate(vector_final, vector_initial)
+    assert_equal distance, 3
+  end
 end
