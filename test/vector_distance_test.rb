@@ -3,8 +3,6 @@ require 'matrix'
 require_relative '../lib/vector_distance'
 
 class ExampleTest < MiniTest::Unit::TestCase
-  Vector = Matrix::Vector
-
   def test_vector_distance_0
     vector_final = Vector[1,1]
     vector_initial = Vector[0,1]
