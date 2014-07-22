@@ -1,6 +1,6 @@
 require 'matrix'
 
-class VectorDistance < Matrix::Vector
+class MyVector < Matrix::Vector
   def distance(vector_final)
     delta_vector = vector_final - self
     delta_vector.magnitude
